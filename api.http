@@ -1,0 +1,6 @@
+GET http://localhost:3000/bank-accounts
+
+
+###
+
+GET http://localhost:3000/bank-accounts/123
