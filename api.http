@@ -2,8 +2,24 @@ GET http://localhost:3000/bank-accounts
 
 ###
 
-GET http://localhost:3000/bank-accounts/123
+GET http://localhost:3000/bank-accounts/ee2537c0-27ee-4107-b674-af2e31454e20
 
 ###
 
 POST http://localhost:3000/bank-accounts
+Content-Type: application/json
+
+{
+    "account_number": "3333-3"
+}
+
+###
+
+POST http://localhost:3000/bank-accounts/transfer
+Content-Type: application/json
+
+{
+    "from":"1111-1",
+    "to":"2222-2",
+    "amount": 100
+}
